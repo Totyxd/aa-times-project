@@ -1,0 +1,109 @@
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "menu_search . action_but"
+    ". technologies ."
+    "date logo paper";
+}
+
+.masthead__menu-and-search {
+    grid-area: menu_search;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+}
+
+.masthead__actions {
+    grid-area: action_but;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.masthead__tech {
+    grid-area: technologies;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-top: solid 1px #e2e2e2;
+    border-left: solid 1px #e2e2e2;
+    border-right: solid 1px #e2e2e2;
+    margin: auto;
+    position: relative;
+    top: 1px;
+}
+
+.masthead__date {
+    grid-area: date;
+    font-size: 11px;
+    font-weight: 525;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    border-top: solid 1px #e2e2e2;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.masthead__logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    border-top: solid 1px #e2e2e2;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.masthead__paper {
+    grid-area: paper;
+    font-size: 11px;
+    font-weight: 525;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    border-top: solid 1px #e2e2e2;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.menu-and-search-icons {
+    font-size: 13px;
+    padding: 7px 9px 7px 9px;
+}
+
+.menu-and-search-icons:hover {
+    background-color: #f7f7f5;
+}
+
+.actions_buttons {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#masthead_config_button {
+    padding-left: 7px;
+}
+
+.tech__buttons {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+    margin: 0 3px;
+}
+
+.tech__buttons:hover {
+    font-weight: 550;
+}
+
+.masthead__paper__elements {
+    display: flex;
+    align-items: center;
+}
+
+.paper__icon {
+    padding-right: 3px;
+    padding-bottom: 1px;
+}
