@@ -1,1 +1,158 @@
-/* Your code here */
+/*Main Article part*/
+
+.main__big_articles {
+    display: inline-grid;
+    grid-template-columns: 300px 525px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "mainBigTitle mainBigTitle"
+    "sideArticle articleVideo";
+}
+
+.article__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: normal;
+    padding-bottom: 25px;
+}
+
+.article__title__container {
+    display: flex;
+}
+
+.article__byline {
+    color: #6f6f6f;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.article__author {
+    text-transform: uppercase;
+}
+
+.big__main__title__container {
+    grid-area: mainBigTitle;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.main__articles__content {
+    grid-area: sideArticle;
+    border-bottom: solid 2px black;
+}
+
+.main__articles__video {
+    grid-area: articleVideo;
+    font-size: 15px;
+    border-bottom: solid 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.main__articles__video > p {
+    padding-left: 26px;
+}
+
+.main__articles__content > ul {
+    list-style: disc;
+}
+
+.main__articles__content li {
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+
+/*Side right articles part*/
+
+.right__articles {
+    display: inline-grid;
+    grid-template-rows: 130px 130px 65px 65px 65px;
+    width: 400px;
+}
+
+.right__article__content > h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.right__article__content > span {
+    color: #6f6f6f;
+    font-size: 12px;
+}
+
+.right__article__content > p {
+    font-size: 15px;
+}
+
+.right__article__content {
+    padding: 10px 0 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mini-recommends {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5px;
+    border-top: solid 1px #e2e2e2;
+}
+
+.mini-recommends h5 {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.mini-recommends span {
+    font-size: 13px;
+    color: #6f6f6f;
+}
+
+.left-mini-rec {
+    align-self: center;
+}
+
+.right-mini-rec {
+    align-self: center;
+}
+
+/*Bottom left side*/
+
+.left-bottom-articles {
+    display: inline-flex;
+    width: 825px;
+    position: relative;
+    bottom: 60px;
+    border-bottom: solid 2px black;
+    padding-bottom: 15px;
+}
+
+.left-bottom-articles h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.left-bottom-articles span {
+    color: #6f6f6f;
+    font-size: 12px;
+    padding: 15px 0;
+}
+
+.left-bottom-articles p{
+    font-size: 15px;
+    padding-top: 10px;
+}

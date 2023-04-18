@@ -1,1 +1,15 @@
-/* Your code here */
+.main__nav__links {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.main__nav__links  li {
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 15px;
+}
+
+.main__nav__links  li:hover {
+    text-decoration: underline;
+}
